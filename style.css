@@ -1,0 +1,179 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,700&family=Inter:wght@300;400;600;700&display=swap');
+
+:root {
+    --theme: #F0EFE9;
+    --theme-yellow: #F9D783;
+}
+
+
+* {
+    font-size: 16px;
+    font-family: 'Inter', 'Dm Sans', sans-serif;
+    color: #191919;
+}
+
+.container {
+    padding: 0;
+}
+
+p {
+    margin: 0;
+}
+
+a:hover p {
+    color: var(--theme-yellow);
+}
+a:hover i {
+    color: var(--theme-yellow);
+}
+
+.yellow-btn {
+    background-color: var(--theme-yellow);
+    border: none;
+    display: flex;
+    align-items: center;
+    padding: 15px 30px;
+    border-radius: 50px;
+    gap: 10px;
+    font-weight: 600;
+}
+.beige-btn {
+    background-color: var(--theme);
+    border: 1px solid black;
+    display: flex;
+    align-items: center;
+    padding: 15px 30px;
+    border-radius: 50px;
+    gap: 10px;
+    font-weight: 600;
+}
+    
+
+
+
+.header-menu {
+    background-color: var(--theme);
+    position: relative;
+}
+
+    .header-menu .top-menu {
+        display: flex;
+        justify-content: space-between;
+    }
+    
+        .header-menu .top-menu .contact-info {
+            display: flex;
+            flex-direction: column;
+            flex: 1;
+            margin-left: 30px;
+            margin-top: 5px;
+        }
+
+            .header-menu .top-menu .contact-info .contact-links {
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+            }
+                .header-menu .top-menu .contact-info .contact-links .contact-information {
+                    display: flex;
+                    flex-direction: row;
+                    flex: 1;
+                }
+                    .header-menu .top-menu .contact-info .contact-links .contact-information .contact-link {
+                        display: flex;
+                        flex-direction: row;
+                        align-items: end;
+                    }
+                        .header-menu .top-menu .contact-info .contact-links .contact-information .contact-link i {
+                            font-size: 25px;
+                            margin-left: 15px;
+                            margin-right: 10px;
+                            margin-bottom: 3px;
+                        }
+                        .header-menu .top-menu .contact-info .contact-links .contact-information .contact-link p {
+                            font-size: 15px;
+                            font-weight: 300;
+                        }
+                        .header-menu .top-menu .contact-info .contact-links .contact-information .contact-link:first-child i {
+                            margin-left: 0px;
+                        }
+                        .header-menu .top-menu .contact-info .contact-links .contact-information .contact-link .menu-divider {
+                            height: 80%;
+                            align-self: center;
+                            margin-left: 15px;
+                            border: rgb(0, 0, 0, 10%) 1px solid;
+                        }
+
+                .header-menu .top-menu .contact-info .contact-links .social-media {
+                        display: flex;
+                        flex-direction: row;
+                        align-items: center;
+                }
+                    .header-menu .top-menu .contact-info .contact-links .social-media a i {
+                        font-size: 15px;
+                        margin: 10px 10px;
+                    }
+
+            .header-menu .top-menu .contact-info .middle-divider {
+                border: rgb(0, 0, 0, 10%) 1px solid;
+                margin: 10px 0 20px 0;
+            }       
+
+            .header-menu .top-menu .contact-info .menu-links {
+                display: flex;
+                justify-content: space-between;
+                align-items: end;
+            } 
+                .header-menu .top-menu .contact-info .menu-links .menu-options {
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    gap: 35px;
+                } 
+                    .header-menu .top-menu .contact-info .menu-links .menu-options a {
+                        font-weight: 400;
+                        text-decoration: none;
+
+                    } 
+                    .header-menu .top-menu .contact-info .menu-links .menu-options a:first-child {
+                        text-decoration: underline black;
+                    } 
+    
+                    
+    .menu-showcase {
+        margin-top: 50px;
+        display: flex;
+        align-items: center;
+    }
+
+        .menu-showcase .left-showcase h1 {
+            font-family: 'Dm sans';
+            font-size: 60px;
+            font-weight: 700;
+        }
+        .menu-showcase .left-showcase h2 {
+            font-family: 'Inter';
+            font-size: 20px;
+            font-weight: 400;
+            color: rgb(25, 25, 25, 70%);
+        }
+        .menu-showcase .left-showcase .showcase-buttons {
+            margin-top: 50px;
+            display: flex;
+            gap: 20px;
+            z-index: 1;
+            position: relative;
+
+        }
+        .menu-showcase .right-showcase img {
+            z-index: 1;
+            position: relative;
+        }
+
+    .bottom-showcase img {
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        z-index: 0;
+    }
+                            
