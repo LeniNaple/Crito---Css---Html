@@ -3,6 +3,7 @@
 :root {
     --theme: #F0EFE9;
     --theme-yellow: #F9D783;
+    --theme-orange: #F94D1C;
 }
 
 
@@ -47,6 +48,19 @@ a:hover i {
     gap: 10px;
     font-weight: 600;
 }
+.black-btn {
+    background-color: #191919;
+    color: var(--theme);
+    display: flex;
+    align-items: center;
+    padding: 15px 30px;
+    border-radius: 50px;
+    gap: 10px;
+    font-weight: 600;
+}
+    .black-btn i {
+        color: var(--theme);
+    }
     
 
 
@@ -230,22 +244,77 @@ a:hover i {
 
 .about-us {
     display: flex;
-    border: black solid 2px;
     gap: 200px;
+    position: relative;
 }
     .about-us .left-about {
         padding-left: 50px;
-        border: blue solid 2px;
         flex: 1;
     }
         .about-us .left-about img {
             width: 100%;
         }
+        .about-us .left-about .blue-square {
+            background-color: #BEEBFF;
+            position: absolute;
+            left: 0;
+            bottom: 10%;
+            width: 370px;
+            height: 180px;
+            box-shadow:#959595 -3px 1px 10px;
+            border-radius: 3px;
+            padding: 20px;
+        }
+            .about-us .left-about .blue-square h1 {
+                font-family: 'Dm sans';
+                font-size: 20px;
+                font-weight: 700;
+                margin-bottom: 20px;
+            }
+            .about-us .left-about .blue-square span {
+                color: var(--theme-orange);
+            }
+
     .about-us .right-about {
         padding-right: 50px;
+        flex: 1;
         display: flex;
         flex-direction: column;
-        flex: 1;
         align-items: start;
-        justify-content: stretch;
+        justify-content: space-between;
     }
+        .about-us .right-about .about-text {
+            display: flex;
+            flex-direction: column;
+            align-items: start;
+        }
+            .about-us .right-about .about-text h3 {
+                color: var(--theme-orange);
+                font-size: 18px;
+                margin-bottom: 20px;
+            }
+            .about-us .right-about .about-text h1  {
+                font-size: 45px;
+                font-weight: 700;
+                font-family: 'Dm sans';
+            }
+            .about-us .right-about .about-text p  {
+                color: rgb(25, 25, 25, 70%);
+                margin-top: 30px;
+            }
+        .about-us .right-about .about-buttons  {
+            display: flex;
+            margin-top: 40px;
+            gap: 30px;
+            align-items: center;
+        }
+            .about-us .right-about .about-buttons .white-button {
+                background-color: white;
+                border: black solid 1px;
+                width: 45px;
+                height: 45px;
+                border-radius: 50%;
+            }
+                .about-us .right-about .about-buttons .white-button i {
+                    font-size: 10px;
+                }
