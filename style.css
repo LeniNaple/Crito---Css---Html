@@ -251,7 +251,12 @@ a:hover i {
         padding-left: 50px;
         flex: 1;
     }
-        .about-us .left-about img {
+        .about-us .left-about .wavy-left {
+            position: absolute;
+            left: 15px;
+            top: 8%;
+        }
+        .about-us .left-about .samantha-img {
             width: 100%;
         }
         .about-us .left-about .blue-square {
@@ -318,3 +323,85 @@ a:hover i {
                 .about-us .right-about .about-buttons .white-button i {
                     font-size: 10px;
                 }
+
+
+.our-services {
+    background-color: var(--theme);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    padding: 120px 0;
+}  
+    .our-services .wavy-right {
+        position: absolute;
+        right: 0;
+        bottom: 0;
+    }       
+    .our-services .container > p {
+        color: var(--theme-orange);
+        font-size: 18px;
+        margin-bottom: 10px;
+    }  
+    .our-services .container > h1 {
+        font-weight: 700;
+        font-family: 'Dm sans';
+        font-size: 45px;
+    }  
+
+    .our-services .container .service-cards {
+       display: flex;
+       align-items: center;
+       justify-content: space-between;
+       gap: 30px;
+    }  
+        .our-services .container .service-cards .service-card{
+            background-color: white;
+            padding: 45px 25px;
+            height: 100%;
+            border: white 1px solid;
+            position: relative;
+            margin: 50px 0;
+        }  
+            .our-services .container .service-cards .service-card .gray-line {
+                width: 15%;
+                margin-bottom: 45px;
+                border: rgb(25, 25, 25, 70%) 1px solid;
+            }  
+            .our-services .container .service-cards .service-card h2{
+                font-family: 'Dm sans';
+                font-size: 22px;
+                margin-bottom: 15px;
+            } 
+            .our-services .container .service-cards .service-card p{
+                color: rgb(25, 25, 25, 70%);
+                margin-bottom: 100px;
+            } 
+            .our-services .container .service-cards .service-card button{
+                position: absolute;
+                right: 25px;
+                bottom: 55px;
+                border-radius: 50%;
+                height: 56px;
+                width: 56px;
+                display: flex;
+                justify-content: center;
+                padding: 0;
+            } 
+                .our-services .container .service-cards .service-card button i{
+                    font-size: 25px;
+                } 
+
+        .our-services .container .service-cards .service-card:hover {
+            background-color: var(--theme-yellow);
+            border: var(--theme-yellow) 1px solid;
+        }  
+            .our-services .container .service-cards .service-card:hover button {
+                background-color: white;
+                border: white 1px solid;
+            }  
+            .our-services .container .service-cards .service-card:hover button i {
+                color: #191919;
+            }  
+
+            
