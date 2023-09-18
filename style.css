@@ -405,3 +405,73 @@ a:hover i {
             }  
 
             
+.choose-us {
+    position: relative;
+}
+
+    .choose-us .beige-background {
+        position: absolute;
+        background-color: var(--theme);
+        width: 55%;
+        height: 70%;
+        z-index: 0;
+        right: 0;
+        bottom: 0;
+    }
+    .choose-us .container {
+        display: flex;
+    }
+    .choose-us .container .choice-right  {
+        display: flex;
+        justify-content: start;
+        flex: 1;
+    }
+        .choose-us .container .choice-right img {
+            width: 85%; 
+            height: fit-content;
+            z-index: 1;
+        }
+        .choose-us .container .choice-left {
+            display: flex;
+            flex-direction: column;
+            flex: 1;
+            gap: 20px;
+            z-index: 1;
+        }
+            .choose-us .container .choice-left > p {
+                color: var(--theme-orange);
+                font-size: 18px;
+            }
+            .choose-us .container .choice-left > h1 {
+                font-size: 45px;
+                font-family: 'Dm sans';
+                font-weight: 600;
+                width: 70%;
+            }
+            .choose-us .container .choice-left .choice-list {
+                    display: flex;
+                    gap: 20px;
+            }    
+                .choose-us .container .choice-left .choice-list .choice-icon {
+                    border: rgb(0, 0, 0, 20%) solid 1px;
+                    width: 60px;
+                    height: 60px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    border-radius: 50%;
+                }    
+                    .choose-us .container .choice-left .choice-list .choice-icon i {
+                        font-size: 25px;
+                    }  
+                .choose-us .container .choice-left .choice-list .choice-text {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: end;
+                }  
+                    .choose-us .container .choice-left .choice-list .choice-text h3 {
+                        font-family: 'Dm sans';
+                        font-size: 22px;
+                        margin-bottom: 2px;
+                    }  
+                    
