@@ -13,6 +13,10 @@
     color: #191919;
 }
 
+.unactive-color {
+    color: rgb(25, 25, 25, 20%);
+}
+
 .container {
     padding: 0;
 }
@@ -500,9 +504,13 @@ a:hover i {
         .project-section .big-grid .grid-card  {
             display: flex;
             flex-direction: column;
+            gap: 10px;
         }  
             .project-section .big-grid .grid-card button {
                 align-self: flex-end;
+                margin-top: 15px;
+                border: none;
+                background-color: white;
             }  
             .project-section .big-grid .grid-card img {
                 width: 100%;
@@ -517,3 +525,77 @@ a:hover i {
                 font-family: 'Dm sans';
                 font-size: 22px;
             } 
+    .project-section .black-btn {
+        margin-top: 70px;
+        background: black;
+        font-weight: 300;
+    }  
+        .project-section .black-btn i {
+            font-weight: 300;
+        } 
+
+
+.orange-section {
+    background: var(--theme-yellow);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+        .orange-section .container .meet-our-team{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+        }
+            .orange-section .container .meet-our-team .team-title {
+                width: 100%;
+            }
+                .orange-section .container .meet-our-team .team-title .browse-team{
+                    width: 100%;
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+                    margin-bottom: 50px;
+                }
+                .orange-section .container .meet-our-team .team-title p{
+                    color: var(--theme-orange);
+                    font-size: 18px;
+                    margin-bottom: 10px;
+                }
+                    .orange-section .container .meet-our-team .team-title .browse-team h1{
+                        font-size: 45px;
+                        font-family: 'Dm sans';
+                        margin-bottom: 0;
+                    }
+                    .orange-section .container .meet-our-team .team-title .browse-team .yellow-btn{
+                        border: black 1px solid;
+                    }
+            .orange-section .container .meet-our-team .team-cards{
+                display: grid;
+                width: 100%;
+                gap: 30px;
+                grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+                margin-bottom: 45px;
+            }
+                    .orange-section .container .meet-our-team .team-cards .team-card h2 {
+                        font-family: 'Dm sans';
+                        font-size: 22px;
+                        margin-bottom: 5px;
+                    }
+                    .orange-section .container .meet-our-team .team-cards .team-card p {
+                        color: rgb(25, 25, 25, 70%);
+                    }
+                    .orange-section .container .meet-our-team .team-cards .team-card img{
+                        width: 100%;
+                        height: 420px;
+                        margin-bottom: 30px;
+                    }
+            .orange-section .container .meet-our-team .small-dots {
+                margin-bottom: 50px;
+            }
+    .orange-section .reviews{
+        
+    }
+                
