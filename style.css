@@ -70,6 +70,13 @@ a:hover i {
     gap: 10px;
     font-weight: 600;
 }
+    .yellow-btn:hover {
+        background-color: var(--color-black);
+        color: var(--theme-yellow);
+    }
+    .yellow-btn:hover p, .yellow-btn:hover i {
+        color: var(--theme-yellow);
+    }
 .beige-btn {
     background-color: var(--theme);
     border: 1px solid black;
@@ -80,6 +87,15 @@ a:hover i {
     gap: 10px;
     font-weight: 600;
 }
+    .beige-btn:hover {
+        border: 1px solid var(--color-black);
+        background-color: var(--color-black);
+        color: var(--theme-yellow);
+    }
+        .beige-btn:hover p, .beige-btn:hover i {
+            color: var(--theme-yellow);
+        }
+
 .black-btn {
     background-color: #191919;
     color: var(--theme);
@@ -90,9 +106,18 @@ a:hover i {
     gap: 10px;
     font-weight: 600;
 }
+    .black-btn:hover {
+        background-color: var(--theme-yellow);
+        border: 2px solid var(--theme-yellow);
+        color: var(--theme-yellow);
+    }
     .black-btn i {
         color: var(--theme);
     }
+    .black-btn:hover , .black-btn:hover i {
+        color: black;
+    }
+    
 .white-btn {
     background-color: white;
     color: black;
@@ -104,6 +129,13 @@ a:hover i {
     gap: 10px;
     font-weight: 600;
 }
+    .white-btn:hover {
+        background-color: var(--color-black);
+        color: var(--theme-yellow);
+    }
+    .white-btn:hover p, .white-btn:hover i {
+        color: var(--theme-yellow);
+    }
     
 
 
@@ -568,14 +600,10 @@ a:hover i {
                 font-family: 'Dm sans';
                 font-size: 22px;
             } 
-    .project-section .black-btn {
-        margin-top: 70px;
-        background: black;
-        font-weight: 300;
-    }  
-        .project-section .black-btn i {
-            font-weight: 300;
-        } 
+            .project-section .black-btn {
+                margin-top: 70px;
+            }  
+                
 
 
 .orange-section {

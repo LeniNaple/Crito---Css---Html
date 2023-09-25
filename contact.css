@@ -20,12 +20,13 @@
     --color-yellow-botton: #F9D783;
     --color-yellow-team: #EDCF86;
     --color-white: #FFFFFF;
-    --color-divider: rgb(255, 255, 255, 20%);
+    --color-divider: rgba(255, 255, 255, 20%);
     --color-opacity-white-70: rgb(255, 255, 255, 70%);
     --color-black: #191919;
     --color-gray-border: #707070;
     --color-orange: rgb(249, 77, 28);
     --color-black-footer: #0E1021;
+    --color-gray-border-20: rgb(25, 25, 25, 20%);
 
     --font-size-15: 15px;
     --font-size-16: 16px;
@@ -72,7 +73,16 @@ a:hover i {
     border-radius: 50px;
     gap: 10px;
     font-weight: 600;
+    transition: all ease-in-out 250ms;
 }
+    .yellow-btn:hover {
+        background-color: var(--color-black);
+        color: var(--theme-yellow);
+    }
+    .yellow-btn:hover p, .yellow-btn:hover i {
+        color: var(--theme-yellow);
+    }
+
 .beige-btn {
     background-color: var(--theme);
     border: 1px solid black;
@@ -193,40 +203,32 @@ a:hover i {
                         text-decoration: none;
 
                     } 
-                    .header-menu .top-menu .contact-info .menu-links .menu-options a:first-child {
+                    .header-menu .top-menu .contact-info .menu-links .menu-options a:last-child {
                         text-decoration: underline black;
                     } 
     
                     
     .menu-showcase {
-        margin-top: 50px;
         display: flex;
         align-items: center;
+        justify-content: center;
+        padding: 100px 0;
     }
-
+        .menu-showcase .showcase-links {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            text-decoration: none;
+        }
+            .menu-showcase .showcase-links a {
+                text-decoration: none;
+            }
         .menu-showcase .left-showcase h1 {
             font-family: 'Dm sans';
-            font-size: 90px;
+            font-size: 56px;
             font-weight: 700;
         }
-        .menu-showcase .left-showcase h2 {
-            font-family: 'Inter';
-            font-size: 20px;
-            font-weight: 400;
-            color: rgb(25, 25, 25, 70%);
-        }
-        .menu-showcase .left-showcase .showcase-buttons {
-            margin-top: 50px;
-            display: flex;
-            gap: 20px;
-            z-index: 1;
-            position: relative;
-
-        }
-        .menu-showcase .right-showcase img {
-            z-index: 1;
-            position: relative;
-        }
+        
 
     .bottom-showcase img {
         position: absolute;
@@ -243,7 +245,7 @@ a:hover i {
     }
 
         .contact-section .contact-section-box {
-            border: 1px solid var(--color-gray-border-opacity20);
+            border: 1px solid var(--color-gray-border-20);
             display: flex;
             padding-left: 60px;
             padding-right: 110px;
