@@ -893,8 +893,13 @@ a:hover i {
 .news-updates {
     background-color: var(--color-beige);
     margin-top: 90px;
+    position: relative;
 }
-
+    .news-updates img {
+        position: absolute;
+        right: 0;
+        bottom: 60px;
+    }
     .news-updates .news-updates-two {
         display: grid;
         padding-top: 110px;

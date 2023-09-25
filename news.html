@@ -4,109 +4,268 @@
     <meta charset="UTF-8">
     <meta name="description" content="Demo version">
     <meta name="viewport" content="width=device=width, initial-scale=1.0">
-    <title>Demo</title>
+    <title>News</title>
     <script src="https://kit.fontawesome.com/41c8b474e2.js" crossorigin="anonymous"></script>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
     <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
     <script defer src="script.js"></script>
-    <link href="style-digitalization.css" rel="stylesheet">
+    <link href="news.css" rel="stylesheet">
 </head>
 <body>
 
-    <div class="page-top">
-        <div class="container showcase">
-            <div class="grid-container">
-    
-                <div class="grid-item logo">
-                    <a href="/" class="grid-item-logo" ><img src="./images/logo/logotype.svg" alt="CritoLogo"></a>
-                </div>
-                
-                <div class="grid-item middle-grid">
-    
-                    <div class="middle-grid-item">
-                        <p class="showcase-top-contact">
-                            <i class="fa-regular fa-phone-volume"></i> +46 (8) 121 470 50
-                        </p>
-                        <p class="showcase-top-contact">
-                            <i class="fa-duotone fa-pipe"></i>&nbsp;&nbsp;
-                            <i class="fa-regular fa-envelope-dot"></i> info@crito.com
-                        </p>                      
-                        <p class="showcase-top-contact">
-                            <i class="fa-duotone fa-pipe"></i>&nbsp;&nbsp;
-                            <i class="fa-sharp fa-regular fa-location-dot"></i> Sveavägen 31, 111 34 STOCKHOLM
-                        </p>
+
+    <header class="border header-menu ">
+        <div class="top-menu container">
+            <img src="/images/logotype.svg" alt="Crito logo">
+            <div class="contact-info">
+
+                <div class="contact-links">
+                    <div class="contact-information">
+                        <div class="phone-number contact-link">
+                            <i class="fa-regular fa-phone-volume menu-icon"></i>
+                            <p>+46 (8) 121 470 50</p>
+                        </div>
+                        <div class="email contact-link">
+                            <div class="menu-divider"></div>
+                            <i class="fa-regular fa-envelope menu-icon"></i>
+                            <p>info@crito.com</p>
+                        </div>
+                        <div class="adress contact-link">
+                            <div class="menu-divider"></div>
+                            <i class="fa-regular fa-location-dot menu-icon"></i>
+                            <p>Sveavägen 31, 111 34 STOCKHOLM</p>
+                        </div>
                     </div>
-    
-                    <div class="middle-grid-item">
-                        <a href="/home.html" class="showcase-navigation">Home</a>
-                        <a href="#" class="showcase-navigation">Service</a>
-                        <a href="/news.html" class="showcase-navigation">News</a>
-                        <a href="/contact.html" class="showcase-navigation">Contact</a>
-                    </div>
-    
-                </div>
-    
-                <div class="grid-item right-showcase">
-                    <p class="showcase-media">
+                    <div class="social-media">
                         <a href="#"><i class="fa-brands fa-facebook"></i></a>
                         <a href="#"><i class="fa-brands fa-twitter"></i></a>
                         <a href="#"><i class="fa-brands fa-instagram"></i></a>
                         <a href="#"><i class="fa-brands fa-linkedin"></i></a>
-                    </p>
-                    <button class="login-button">Login <i class="fa-solid fa-arrow-up-right"></i></button>
+                    </div>
+                </div>
+                
+
+                
+                <div class="middle-divider"></div>
+
+                <div class="menu-links">
+                    <div class="menu-options">
+                        <a href="/home.html" class="menu-option"><p>Home</p></a>
+                        <a href="#" class="menu-option"><p>Service</p></a>
+                        <a href="/news-two.html" class="menu-option"><p>News</p></a>
+                        <a href="/contact.html" class="menu-option"><p>Contact</p></a>
+                    </div>
+                    <button class="login-btn yellow-btn"><p>Login</p><i class="fa-solid fa-arrow-up-right"></i></button>
+                </div>
+            </div>
+            
+        </div>
+        <div class="menu-showcase container">
+            <div class="left-showcase">
+                <div class="showcase-links">
+                    <a href="/home.html" class="menu-option"><p>Home</p></a>
+                    <a href="/contact.html" class="menu-option"><p>Contact</p></a>
+                </div>
+                <h1>Let’s Connect</h1>
+            </div>
+        </div>
+        <div class="bottom-showcase">
+            <img src="images/background-lines.svg" alt="white lines">
+        </div>
+    </header>
+
+    <section class="news">
+        <div class="container">
+            <div class="news-title">
+                <h1>Our News & Articles</h1>
+            </div>
+            <div class="news-grid">
+                <div class="news-card">
+                    <div class="yellow-square">
+                        <h2>25</h2>
+                        <p>Mar</p>
+                    </div>
+                    <img src="/images/im1.jpg" alt="news">
+                    <p>Business</p>
+                    <h3>How To Use Digitalization In The Classroom</h3>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Architecto sed hic libero.</p>
+                </div>
+                <div class="news-card">
+                    <div class="yellow-square">
+                        <h2>17</h2>
+                        <p>Mar</p>
+                    </div>
+                    <img src="/images/im2.jpg" alt="news">
+                    <p>Business</p>
+                    <h3>How To Implement Chat GPT In Your Projects</h3>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Architecto sed hic libero.</p>
+                </div>
+                <div class="news-card">
+                    <div class="yellow-square">
+                        <h2>13</h2>
+                        <p>Mar</p>
+                    </div>
+                    <img src="/images/im3.jpg" alt="news">
+                    <p>Business</p>
+                    <h3>The Guide To Support Modern CSS Design</h3>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Architecto sed hic libero.</p>
                 </div>
             </div>
 
-            <section class="connect-showcase">
-                <div class="connect-showcase-a">
-                    <a href="/home.html">Home</a>
-                    <a href="/news.html">News</a>
+            <div class="news-grid">
+                <div class="news-card">
+                    <div class="yellow-square">
+                        <h2>12</h2>
+                        <p>Mar</p>
+                    </div>
+                    <img src="/images/im4.jpg" alt="news">
+                    <p>Business</p>
+                    <h3>Why You Need To Implement The Five S's</h3>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Architecto sed hic libero.</p>
                 </div>
-                <h1>News & Articles</h1>
-            </section>
-        </div>
-        <img class="lines-under" src="./images/lines/background-lines.svg" alt="">
-    </div>
+                <div class="news-card">
+                    <div class="yellow-square">
+                        <h2>07</h2>
+                        <p>Mar</p>
+                    </div>
+                    <img src="/images/im5.jpg" alt="news">
+                    <p>Business</p>
+                    <h3>Get More Involved With Your End Users</h3>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Architecto sed hic libero.</p>
+                </div>
+                <div class="news-card">
+                    <div class="yellow-square">
+                        <h2>02</h2>
+                        <p>Mar</p>
+                    </div>
+                    <img src="/images/im6.jpg" alt="news">
+                    <p>Business</p>
+                    <h3>Guided Tour Of Our New Head Office In Stockholm</h3>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Architecto sed hic libero.</p>
+                </div>
+            </div>
 
-    <section class="digitalization container">
-        <h2>How To Use Digitalization</h2>
-        <h2>In The Classroom</h2>
-        <div class="digitalization-points">
-            <h4>Mar 25, 2023</h4>
-            <h4><i class="fa-solid fa-circle" style="color: #f9d873;"></i></h4>
-            <h4>Business</h4>
-            <h4><i class="fa-solid fa-circle" style="color: #f9d873;"></i></h4>
-            <h4>Kimberly Hansen</h4>
-        </div>
+            <div class="news-grid">
+                <div class="news-card">
+                    <div class="yellow-square">
+                        <h2>28</h2>
+                        <p>Feb</p>
+                    </div>
+                    <img src="/images/img4.jpg" alt="news">
+                    <p>Business</p>
+                    <h3>Using Business Intelligence To Get Insights Into Our Businesses</h3>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Architecto sed hic libero.</p>
+                </div>
+                <div class="news-card">
+                    <div class="yellow-square">
+                        <h2>18</h2>
+                        <p>Feb</p>
+                    </div>
+                    <img src="/images/img2.jpg" alt="news">
+                    <p>Business</p>
+                    <h3>Apple Has Released New Products. Are They Any Good?</h3>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Architecto sed hic libero.</p>
+                </div>
+                <div class="news-card">
+                    <div class="yellow-square">
+                        <h2>11</h2>
+                        <p>Feb</p>
+                    </div>
+                    <img src="/images/img3.jpg" alt="news">
+                    <p>Business</p>
+                    <h3>How To Improve Your Teams And Get A Better Result</h3>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Architecto sed hic libero.</p>
+                </div>
+            </div>
 
-        <div class="digitalization-flex container">
-            <div class="digitalization-left">
-                <img src="/images/pictures/linkedin-sales-solutions-Mis5fyJi7Q0-unsplash.jpg" alt="">
-                <h4>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Maecenas porttitor congue massa. Fusce posuere, magna sed pulvinar ultricies, purus lectus malesuada libero, sit amet commodo magna eros quis urna.</h4>
-                <h4>Nunc viverra imperdiet enim. Fusce est. Vivamus a tellus.
-                    Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Proin pharetra nonummy pede. Mauris et orci. Aenean nec lorem. In porttitor. Donec laoreet nonummy augue. uspendisse dui purus, scelerisque at, vulputate vitae, pretium mattis, nunc. Mauris eget neque at sem venenatis eleifend. Ut nonummy.
-                </h4>
-                <h4>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Maecenas porttitor congue massa. Fusce posuere, magna sed pulvinar ultricies, purus lectus malesuada libero, sit amet commodo magna eros quis urna. unc viverra imperdiet enim. Fusce est. Vivamus a tellus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Proin pharetra nonummy pede. Mauris et orci.</h4>
-                <h4>Aenean nec lorem. In porttitor. Donec laoreet nonummy augue.
-                    Suspendisse dui purus, scelerisque at, vulputate vitae, pretium mattis, nunc. Mauris eget neque at sem venenatis eleifend. Ut nonummy.
-                </h4>
-                <h3>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Maecenas porttitor congue massa. Fusce posuere, magna sed pulvinar ultricies, purus lectus malesuada libero, sit amet commodo magna eros quis urna.</h3>
-                <h4>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Maecenas porttitor congue massa. Fusce posuere, magna sed pulvinar ultricies, purus lectus malesuada libero, sit amet commodo magna eros quis urna. unc viverra imperdiet enim. Fusce est. Vivamus a tellus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. </h4>
-                <button>Digitalization</button>
-                <button>School</button>
-                <button>IT</button>
-                <button>Design</button>
-                <button>Work</button>
-                <button>Tech</button>
+            <div class="moving-news">
+                <button><</button>
+                <button>1</button>
+                <button>2</button>
+                <button>3</button>
+                <button>...</button>
+                <button>9</button>
+                <button>></button>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="news-updates">
+        <div class="container news-updates-two">
+            <h2>Get News Updates By Signup </h2>
+            <input class="subscribe-input" type="text" id="myText" name="myText" placeholder="username@domain.com">
+            <button class="subscribe-button">Subscribe <i class="fa-solid fa-arrow-up-right"></i></button>
+        </div>
+        <img src="images/background-wavy-lines.svg" alt="wavy lines">
+    </section>
+
+
+    <div class="footer">
+        <div class="container footer-grid">
+    
+            <div class="grid-footer-one">
+                <a href="/" class="grid-item-logo" ><img src="images/logotype-white.svg" alt="CritoLogoWhite"></a>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat obcaecati voluptas voluptates! Voluptates laborum nam ratione minus necessitatibus, iure praesentium.</p>
             </div>
     
-            <div class="digitalization-right">
-                <input class="subscribe-input" type="text" id="myText" name="myText" placeholder="username@domain.com">
+            <div class="grid-footer-part">
+                <h5>Company</h5>
+                <a href="/">About</a>
+                <a href="/">Features</a>
+                <a href="/">Works</a>
+                <a href="/">Career</a>
+            </div>
+    
+            <div class="grid-footer-part">
+                <h5>Help</h5>
+                <a href="/">Customer Support</a>
+                <a href="/">Delivery Details</a>
+                <a href="/">Terms & Conditions</a>
+                <a href="/">Privacy Policy</a>
+            </div>
+    
+            <div class="grid-footer-part">
+                <h5>Resources</h5>
+                <a href="/">Free eBooks</a>
+                <a href="/">Development Tutorial</a>
+                <a href="/">How to - Blog</a>
+                <a href="/">Youtube Playlist</a>
+            </div>
+    
+            <div class="grid-footer-part">
+                <h5>Link</h5>
+                <a href="/">Free eBooks</a>
+                <a href="/">Development Tutorial</a>
+                <a href="/">How to - Blog</a>
+                <a href="/">Youtube Playlist</a>
+            </div> 
+        </div>
+    
+        <div class="footer-container">
+            <div class="footer-img">
+                <img src="/images/background-lines-white-right.svg" alt="picture">
             </div>
         </div>
-        
+    
+        <div class="footer-border-line"></div>
+    
+        <div class="container lower-footer-container">
+            <div class="lower-footer">
+                <div class="footer-rights">
+                    <p>© 2023 Crito - Consulting Company Inc. All Rights Reserved.</p>
+                </div>
+    
+                <div class="footer-media">
+                    <a href="/"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="/"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="/"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="/"><i class="fa-brands fa-linkedin"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
 
-    </section>
     
 </body>
 </html>
